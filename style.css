@@ -10,23 +10,49 @@
 
 body {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 	margin: 0;
+	background-color: #f1f1f1;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-color: cornflowerblue;
+	justify-content: center;
+	align-items: center;
+}
+
+#reset {
+	padding: 2.5rem 5rem;
+	font-size: 1.75rem;
+	background-color: darkgreen;
+	color: #fff;
+	border-radius: 15px;
+}
+
+#reset:hover {
+	opacity: 75%;
+	cursor: pointer;
 }
 
 main {
-	height: 100vh;
-	width: 100%;
+	height: 90vh;
+	width: 80%;
 	display: grid;
-	grid-template-columns: repeat(16, 1fr);
-	grid-template-rows: repeat(16, 1fr);
 	grid-gap: 1px;
 	background-color: grey;
+}
+
+#main-container {
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(16, 1fr);
 }
 
 div {
